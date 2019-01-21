@@ -4,24 +4,22 @@
       "version": "1.0",
       "clients": {
         "client-1": {
-          "tlsEnable": true,
-          "organization": "Org1MSP",
-          "channel": "mychannel",
+          "tlsEnable": false,
+          "organization": "Cartorio1MSP",
+          "channel": "enotariado",
           "credentialStore": {
-            "path": "./tmp/credentialStore_Org1/credential",
+            "path": "./tmp/credentialStore_Cartorio1/credential",
             "cryptoStore": {
-              "path": "./tmp/credentialStore_Org1/crypto"
+              "path": "./tmp/credentialStore_Cartorio1/crypto"
             }
           }
         }
       },
       "channels": {
-        "mychannel": {
+        "enotariado": {
           "peers": {
-            "peer0.org1.example.com": {},
-            "peer1.org1.example.com": {},
-            "peer0.org2.example.com": {},
-            "peer1.org2.example.com": {}
+            "peer0.cartorio1.cnb.org": {},
+            "peer0.cartorio2.cnb.org": {}
           },
           "connection": {
             "timeout": {
@@ -35,92 +33,54 @@
         }
       },
       "organizations": {
-        "Org1MSP": {
-          "mspid": "Org1MSP",
+        "Cartorio1MSP": {
+          "mspid": "Cartorio1MSP",
           "fullpath": false,
           "adminPrivateKey": {
-            "path":
-              "crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore"
+            "path": "/datadrive/fabric/bstamper2/bstamper-network/crypto-config/peerOrganizations/cartorio1.cnb.org/users/Admin@cartorio1.cnb.org/msp/keystore"
           },
           "signedCert": {
-            "path":
-              "crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
+            "path": "/datadrive/fabric/bstamper2/bstamper-network/crypto-config/peerOrganizations/cartorio1.cnb.org/users/Admin@cartorio1.cnb.org/msp/signcerts"
           }
         },
-        "Org2MSP": {
-          "mspid": "Org2MSP",
+        "Cartorio2MSP": {
+          "mspid": "Cartorio2MSP",
+          "fullpath": false,
           "adminPrivateKey": {
-            "path":
-              "crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore"
-          },
-           "signedCert": {
-            "path":
-              "crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/signcerts"
-         }
-         },
+            "path": "/datadrive/fabric/bstamper2/bstamper-network/crypto-config/peerOrganizations/cartorio2.cnb.org/users/Admin@cartorio2.cnb.org/msp/keystore"
+          }
+        },
         "OrdererMSP": {
           "mspid": "OrdererMSP",
           "adminPrivateKey": {
-            "path":
-              "crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore"
+            "path": "/datadrive/fabric/bstamper2/bstamper-network/crypto-config/ordererOrganizations/cnb.org/users/Admin@cnb.org/msp/keystore"
           }
         }
       },
       "peers": {
-        "peer0.org1.example.com": {
-          "tlsCACerts": {
-            "path":
-              "crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
-          },
-          "url": "grpcs://172.18.0.6:7051",
-          "eventUrl": "grpcs://172.18.0.6:7053",
+        "peer0.cartorio1.cnb.org": {
+          "url": "grpcs://localhost:7051",
+          "eventUrl": "grpcs://localhost:7053",
           "grpcOptions": {
-            "ssl-target-name-override": "peer0.org1.example.com"
+            "ssl-target-name-override": "peer0.cartorio1.cnb.org"
           }
         },
-        "peer1.org1.example.com": {
-          "url": "grpcs://172.18.0.4:8051",
-          "eventUrl": "grpcs://172.18.0.4:8053",
-          "tlsCACerts": {
-            "path":
-              "crypto-config/peerOrganizations/org1.example.com/peers/peer1.org1.example.com/tls/ca.crt"
-          },
+        "peer0.cartorio2.cnb.org": {
+          "url": "grpcs://177.135.241.218:8051",
+          "eventUrl": "grpcs://localhost:8053",
           "grpcOptions": {
-            "ssl-target-name-override": "peer1.org1.example.com"
-          }
-        },
-        "peer0.org2.example.com": {
-          "url": "grpcs://172.18.0.3:7051",
-          "eventUrl": "grpcs://172.18.0.3:7053",
-          "tlsCACerts": {
-            "path":
-              "crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt"
-          },
-          "grpcOptions": {
-            "ssl-target-name-override": "peer0.org2.example.com"
-          }
-        },
-        "peer1.org2.example.com": {
-          "url": "grpcs://172.18.0.5:8051",
-          "eventUrl": "grpcs://172.18.0.5:8053",
-          "tlsCACerts": {
-            "path":
-              "crypto-config/peerOrganizations/org2.example.com/peers/peer1.org2.example.com/tls/ca.crt"
-          },
-          "grpcOptions": {
-            "ssl-target-name-override": "peer1.org2.example.com"
+            "ssl-target-name-override": "peer0.cartorio2.cnb.org"
           }
         }
       },
       "orderers": {
-        "orderer.example.com": {
-          "url": "grpcs://172.18.0.2:7050"
+        "orderer.cnb.org": {
+          "url": "grpcs://localhost:7050"
         }
       }
     },
     "network-2": {}
   },
-  "eventWaitTime": 600000,
-  "configtxgenToolPath": "fabric-samples/bin",
+  "configtxgenToolPath": "/datadrive/fabric/fabric-samples/bin",
   "license": "Apache-2.0"
 }
