@@ -172,8 +172,7 @@ export class DashboardView extends Component {
           }}
         >
           <h1>
-            Please verify your network configuration, database configuration and
-            try again
+            Por favor verifique sua configuração de rede e de banco de dados e tente novamente
           </h1>
         </div>
       );
@@ -198,7 +197,7 @@ export class DashboardView extends Component {
                       </h1>
                     </Col>
                   </Row>
-                  BLOCKS
+                  BLOCOS
                 </div>
                 <div className={`${classes.statistic} ${classes.vdivide}`}>
                   <Row>
@@ -215,7 +214,7 @@ export class DashboardView extends Component {
                       </h1>
                     </Col>
                   </Row>
-                  TRANSACTIONS
+                  TRANSAÇÕES
                 </div>
                 <div className={`${classes.statistic} ${classes.vdivide}`}>
                   <Row>
@@ -270,7 +269,7 @@ export class DashboardView extends Component {
               </Card>
               <Card className={`${classes.section} ${classes.center}`}>
                 <h5>
-Transactions by Organization
+Transações por Organização
                 </h5>
                 <hr />
                 <OrgPieChart transactionByOrg={transactionByOrg} />

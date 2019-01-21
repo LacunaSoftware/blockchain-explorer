@@ -34,7 +34,7 @@ class BlockView extends Component {
             <Card className={modalClasses.card}>
               <CardTitle className={modalClasses.title}>
                 <FontAwesome name="cube" />
-                Block Details
+                Detalhes do Bloco
               </CardTitle>
               <CardBody className={modalClasses.body}>
                 <span>
@@ -54,7 +54,7 @@ class BlockView extends Component {
             <Card className={modalClasses.card}>
               <CardTitle className={modalClasses.title}>
                 <FontAwesome name="cube" className={classes.cubeIcon} />
-                Block Details
+                Detalhes do Bloco
                 <button
                   type="button"
                   onClick={this.handleClose}
@@ -68,7 +68,7 @@ class BlockView extends Component {
                   <tbody>
                     <tr>
                       <th>
-Channel name:
+Nome do Canal
                       </th>
                       <td>
                         {blockHash.channelname}
@@ -76,7 +76,7 @@ Channel name:
                     </tr>
                     <tr>
                       <th>
-Block Number
+Número do Bloco
                       </th>
                       <td>
                         {blockHash.blocknum}
@@ -84,7 +84,7 @@ Block Number
                     </tr>
                     <tr>
                       <th>
-Created at
+Criado em
                       </th>
                       <td>
                         {blockHash.createdt}
@@ -93,7 +93,7 @@ Created at
 
                     <tr>
                       <th>
-Number of Transactions
+Número de Transações
                       </th>
                       <td>
                         {blockHash.txcount}
@@ -101,16 +101,16 @@ Number of Transactions
                     </tr>
                     <tr>
                       <th>
-Block Hash
+Hash do Bloco
                       </th>
                       <td>
                         {blockHash.blockhash}
                         <button type="button" className={modalClasses.copyBtn}>
                           <div className={modalClasses.copy}>
-Copy
+Copiar
                           </div>
                           <div className={modalClasses.copied}>
-Copied
+Copiado
                           </div>
                           <CopyToClipboard text={blockHash.blockhash}>
                             <FontAwesome name="copy" />
@@ -120,16 +120,16 @@ Copied
                     </tr>
                     <tr>
                       <th>
-Data Hash
+Dados do Hash
                       </th>
                       <td>
                         {blockHash.datahash}
                         <button type="button" className={modalClasses.copyBtn}>
                           <div className={modalClasses.copy}>
-Copy
+Copiar
                           </div>
                           <div className={modalClasses.copied}>
-Copied
+Copiado
                           </div>
                           <CopyToClipboard text={blockHash.datahash}>
                             <FontAwesome name="copy" />
@@ -145,10 +145,10 @@ Prehash
                         {blockHash.prehash}
                         <button type="button" className={modalClasses.copyBtn}>
                           <div className={modalClasses.copy}>
-Copy
+Copiar
                           </div>
                           <div className={modalClasses.copied}>
-Copied
+Copiado
                           </div>
                           <CopyToClipboard text={blockHash.prehash}>
                             <FontAwesome name="copy" />

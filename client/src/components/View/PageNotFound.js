@@ -41,12 +41,12 @@ export const PageNotFound = ({ classes }) => (
     </div>
     <div className={classes.subHeader}>
       {' '}
-Page not found
+página não encontrada
       {' '}
     </div>
     <div className={classes.content}>
       {' '}
-      The page you are trying to access does not exist. Please check the URL
+      A página que você está tentando acessar não existe. Por favor confira a URL
     </div>
   </div>
 );

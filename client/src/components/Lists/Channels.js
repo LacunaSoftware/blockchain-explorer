@@ -22,7 +22,7 @@ class Channels extends Component {
       width: 100,
     },
     {
-      Header: 'Channel Name',
+      Header: 'nome do Canal',
       accessor: 'channelname',
       filterMethod: (filter, rows) => matchSorter(
         rows,
@@ -33,7 +33,7 @@ class Channels extends Component {
       filterAll: true,
     },
     {
-      Header: 'Blocks',
+      Header: 'Blocos',
       accessor: 'blocks',
       filterMethod: (filter, rows) => matchSorter(
         rows,
@@ -45,7 +45,7 @@ class Channels extends Component {
       width: 125,
     },
     {
-      Header: 'Transactions',
+      Header: 'Transações',
       accessor: 'transactions',
       filterMethod: (filter, rows) => matchSorter(
         rows,

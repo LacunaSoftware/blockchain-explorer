@@ -128,7 +128,7 @@ export class ChartStats extends Component {
                 this.toggle('1');
               }}
             >
-              BLOCKS / HORA
+              BLOCOS / HORA
             </NavLink>
           </NavItem>
           <NavItem>
@@ -140,7 +140,7 @@ export class ChartStats extends Component {
                 this.toggle('2');
               }}
             >
-              BLOCKS / MIN
+              BLOCOS / MIN
             </NavLink>
           </NavItem>
           <NavItem>

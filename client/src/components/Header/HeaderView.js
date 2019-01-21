@@ -407,8 +407,8 @@ export class HeaderView extends Component {
 
     const links = [
       { to: '/', label: 'DASHBOARD', exact: true },
-      { to: '/network', label: 'NETWORK' },
-      { to: '/blocks', label: 'BLOCKS' },
+      { to: '/network', label: 'REDE' },
+      { to: '/blocks', label: 'BLOCOS' },
       { to: '/transactions', label: 'TRANSAÇÕES' },
       { to: '/chaincodes', label: 'CHAINCODES' },
       { to: '/channels', label: 'CANAIS' },

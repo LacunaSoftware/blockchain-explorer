@@ -156,8 +156,7 @@ export class LandingPage extends Component {
           }}
         >
           <h1>
-            Please verify your network configuration, database configuration and
-            try again
+            Por favor verifique sua configuração de rede e de banco de dados e tente novamente
           </h1>
         </div>
       );
@@ -170,17 +169,17 @@ export class LandingPage extends Component {
           <Slider {...settings}>
             <div>
               <h3>
-ACCESSING THE NETWORK
+ACESSANDO A REDE
               </h3>
             </div>
             <div>
               <h3>
-CONNECTING TO CHANNEL
+CONECTANDO AO CANAL
               </h3>
             </div>
             <div>
               <h3>
-LOADING BLOCKS
+CARREGANDO BLOCOS
               </h3>
             </div>
           </Slider>

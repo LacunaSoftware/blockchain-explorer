@@ -85,7 +85,7 @@ export class TransactionView extends Component {
             <div>
               <CardTitle className={modalClasses.title}>
                 <FontAwesome name="list-alt" className={classes.listIcon} />
-                Transaction Details
+                Detalhes da Transação
                 <button
                   type="button"
                   onClick={this.handleClose}
@@ -115,7 +115,7 @@ export class TransactionView extends Component {
               <Card className={modalClasses.card}>
                 <CardTitle className={modalClasses.title}>
                   <FontAwesome name="list-alt" className={classes.listIcon} />
-                  Transaction Details
+                  Detalhes da Transação
                   <button
                     type="button"
                     onClick={this.handleClose}
@@ -129,7 +129,7 @@ export class TransactionView extends Component {
                     <tbody>
                       <tr>
                         <th>
-Transaction ID:
+ID da Transação:
                         </th>
                         <td>
                           {transaction.txhash}
@@ -138,10 +138,10 @@ Transaction ID:
                             className={modalClasses.copyBtn}
                           >
                             <div className={modalClasses.copy}>
-Copy
+Copiar
                             </div>
                             <div className={modalClasses.copied}>
-Copied
+Copiado
                             </div>
                             <CopyToClipboard text={transaction.txhash}>
                               <FontAwesome name="copy" />
@@ -151,7 +151,7 @@ Copied
                       </tr>
                       <tr>
                         <th>
-Validation Code:
+Código de Validação:
                         </th>
                         <td>
                           {transaction.validation_code}
@@ -244,7 +244,7 @@ Writes:
           <div>
             <CardTitle className={modalClasses.title}>
               <FontAwesome name="list-alt" className={classes.listIcon} />
-              Transaction Details
+              Detalhes da Transação
               <button
                 type="button"
                 onClick={this.handleClose}

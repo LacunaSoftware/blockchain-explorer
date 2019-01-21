@@ -297,7 +297,7 @@ export class Transactions extends Component {
         <div className={`${classes.filter} row searchRow`}>
           <div className={`${classes.filterElement} col-md-3`}>
             <label className="label">
-From
+Início
             </label>
             <DatePicker
               id="from"
@@ -316,7 +316,7 @@ From
           </div>
           <div className={`${classes.filterElement} col-md-3`}>
             <label className="label">
-To
+Fim
             </label>
             <DatePicker
               id="to"
@@ -336,7 +336,7 @@ To
                 {this.state.err && (
                   <span className=" label border-red">
                     {' '}
-                    From date should be less than To date
+                    Data de início deve ser menor que data do fim
                   </span>
                 )}
               </div>
@@ -364,7 +364,7 @@ To
                 await this.handleSearch();
               }}
             >
-              Search
+              Buscar
             </Button>
           </div>
           <div className="col-md-1">
@@ -375,7 +375,7 @@ To
                 this.handleClearSearch();
               }}
             >
-              Reset
+              Resetar
             </Button>
           </div>
           <div className="col-md-1">
@@ -384,7 +384,7 @@ To
               color="secondary"
               onClick={() => this.setState({ filtered: [], sorted: [] })}
             >
-              Clear Filter
+              Limpar filtro
             </Button>
           </div>
         </div>
