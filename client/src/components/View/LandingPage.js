@@ -56,10 +56,10 @@ const styles = (theme) => {
   const dark = type === 'dark';
   dark
     ? (document.body.style.backgroundColor = '#242036')
-    : (document.body.style.backgroundColor = '#f0f5f9');
+    : (document.body.style.backgroundColor = '#009bb3');
   return {
     background: {
-      backgroundColor: '#f0f5f9',
+      backgroundColor: '#009bb3',
     },
     content: {
       marginTop: 450,

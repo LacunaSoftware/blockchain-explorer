@@ -78,7 +78,7 @@ class ChannelForm extends Component {
             margin="normal"
           />
           <Button size="small" color="primary">
-            Submit
+            Submeter
           </Button>
         </form>
       </div>

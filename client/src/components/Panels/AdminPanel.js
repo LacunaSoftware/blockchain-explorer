@@ -45,7 +45,7 @@ class AdminPanel extends Component {
         <Typography variant="headline" className={classes.panel}>
           <FontAwesome name="cogs" className={classes.panel} />
           {' '}
-ADMIN PANEL
+ADMINISTRADOR
         </Typography>
         <ExpansionPanel className={classes.panel}>
           <ExpansionPanelSummary
@@ -53,7 +53,7 @@ ADMIN PANEL
             className={classes.panel}
           >
             <Typography variant="subheading" className={classes.panel}>
-              MANAGE CHANNEL
+              GERENCIAR PAINEL
               {' '}
             </Typography>
             <Typography variant="caption" className={classes.current}>
@@ -79,7 +79,7 @@ ADMIN PANEL
                 >
                   <MenuItem value="" className={classes.panel}>
                     <em>
-None
+Nenhum
                     </em>
                   </MenuItem>
                   <MenuItem className={classes.panel} value={10}>
@@ -93,7 +93,7 @@ None
                   </MenuItem>
                 </Select>
                 <FormHelperText className={classes.panel}>
-                  select a channel
+                  selecionar um canal
                 </FormHelperText>
               </FormControl>
             </form>
@@ -114,7 +114,7 @@ None
             expandIcon={<ExpandMoreIcon />}
           >
             <Typography variant="subheading" className={classes.panel}>
-              ADD CHANNEL
+              ADICIONAR CANAL
             </Typography>
           </ExpansionPanelSummary>
           <ExpansionPanelDetails className={classes.panel}>

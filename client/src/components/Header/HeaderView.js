@@ -81,17 +81,17 @@ const styles = (theme) => {
       },
     },
     navbarHeader: {
-      backgroundColor: '#e8e8e8',
+      backgroundColor: '#009bb3',
       ...darkNavbar,
     },
     tab: {
-      color: dark ? '#242036' : '#000000',
+      color: dark ? '#242036' : '#ffffff',
       fontSize: '1.05rem',
       fontWeight: 800,
       height: 50,
       margin: 10,
       '&:hover': {
-        color: dark ? '#242036' : '#000000',
+        color: dark ? '#242036' : '#ffffff',
       },
       '@media (max-width: 1415px) and (min-width: 990px)': {
         fontSize: '0.85rem',
@@ -99,7 +99,7 @@ const styles = (theme) => {
     },
     activeTab: {
       color: '#ffffff',
-      backgroundColor: dark ? '#453e68' : '#58c5c2',
+      backgroundColor: dark ? '#453e68' : '#00889D',
       height: 60,
       marginTop: 20,
       padding: 10,
@@ -166,7 +166,7 @@ const styles = (theme) => {
       },
     },
     toggleIcon: {
-      color: dark ? '#242136' : '#58c5c2',
+      color: dark ? '#242136' : '#ffffff',
       fontSize: '1.75em',
       '&:focus': {
         outline: 'none',
@@ -409,9 +409,9 @@ export class HeaderView extends Component {
       { to: '/', label: 'DASHBOARD', exact: true },
       { to: '/network', label: 'NETWORK' },
       { to: '/blocks', label: 'BLOCKS' },
-      { to: '/transactions', label: 'TRANSACTIONS' },
+      { to: '/transactions', label: 'TRANSAÇÕES' },
       { to: '/chaincodes', label: 'CHAINCODES' },
-      { to: '/channels', label: 'CHANNELS' },
+      { to: '/channels', label: 'CANAIS' },
     ];
 
     return (
@@ -528,7 +528,7 @@ export class HeaderView extends Component {
             >
               <div className={classes.channelLoader}>
                 <h4>
-Loading Channel Details
+Carregando Detalhes do Canal
                 </h4>
                 <Loader
                   type="ThreeDots"

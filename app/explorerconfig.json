@@ -5,11 +5,11 @@
     "host": "127.0.0.1",
     "port": "5432",
     "database": "fabricexplorer",
-    "username": "hppoc",
-    "passwd": "password"
+    "username": "postgres",
+    "passwd": "Senha-123"
   },
   "sync": {
-    "type": "local",
+    "type": "host",
     "platform": "fabric",
     "blocksSyncTime": "3"
   }

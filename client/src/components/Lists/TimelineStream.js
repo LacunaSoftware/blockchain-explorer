@@ -112,7 +112,7 @@ export class TimelineStream extends Component {
                 <Typography variant="body1">
                   <b className={classes.text}>
                     {' '}
-Channel Name:
+Nome do Canal:
                   </b>
                   {' '}
                   {item.channelName}
@@ -128,7 +128,7 @@ Datahash:
                   <br />
                   <b className={classes.text}>
                     {' '}
-Number of Tx:
+Número de Transações:
                   </b>
                   {' '}
                   {item.txcount}

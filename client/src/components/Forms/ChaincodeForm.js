@@ -58,7 +58,7 @@ class ChaincodeForm extends Component {
       <div className={`${classes.card} ${classes.container}`}>
         <div className={classes.header} align="center">
           <h3>
-Add Chaincode
+Adicionar Chaincode
           </h3>
         </div>
         <div className={classes.content}>
@@ -82,7 +82,7 @@ Add Chaincode
               margin="normal"
             />
             <Button className={classes.button}>
-Submit
+Submeter
             </Button>
           </form>
         </div>
